@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assest/style.css">
+</head>
+<body>
+    
+<div class="login-box">
+    <p>Password Generator</p>
+    <div class="user-box">
+        <input required type="number" id="length" min="8" max="32" >
+        <label for="length">Password Length</label>
+    </div>
+    <div class="checkbox-group">
+        <div class="checkbox-row">
+            <label>
+                <input type="checkbox" checked id="uppercase">
+                <span class="checkbox"></span>
+                <span class="text">Include Uppercase</span>
+            </label>
+            <label>
+                <input type="checkbox" id="lowercase">
+                <span class="checkbox"></span>
+                <span class="text">Include Lowercase</span>
+            </label>
+        </div>
+        <div class="checkbox-row">
+            <label>
+                <input type="checkbox" id="numbers">
+                <span class="checkbox"></span>
+                <span class="text">Include Numbers</span>
+            </label>
+            <label style="margin-right: 11px;">
+                <input type="checkbox" id="symbols">
+                <span class="checkbox"></span>
+                <span class="text" >Include Symbols</span>
+            </label>
+        </div>
+    </div>
+    <button id="generate">
+        <span>Generate Password</span>
+    </button>
+    <div class="password-display">
+        <span id="password"></span>
+        <span id="copy">📋</span>
+    </div>
+</div>
+
+
+
+    <script src="./assest/JS/app.js"></script>
+</body>
+</html>
